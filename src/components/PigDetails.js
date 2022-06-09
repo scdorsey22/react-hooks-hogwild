@@ -3,7 +3,7 @@ function PigDetails({ hog }) {
     return (
         <div>
             <p>{greased ? "Greased" : "Nongreased"}</p>
-            <p>Highest Medal Achieved: {medal}</p>
+            <p>Highest Medal Achieved: {medal.toUpperCase()}</p>
             <p>{weight}</p>
         </div>
     );

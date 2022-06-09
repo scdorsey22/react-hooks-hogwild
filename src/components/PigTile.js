@@ -9,19 +9,17 @@ function PigTile ( {hog} ) {
         setShowDetails((showDetails) => !showDetails);
     }
 
-    const { name, image } = hog
-
     return (
-        <div className ="ui eight wide column" >
+        <div className ="ui card eight wide column pigTile" >
             <div className="image">
-                <img src={image}/>
+                <img src={hog.image}/>
             </div>
-            <div>
-                <h3>{name}</h3>
+            <div className="header">
+                <h3>{hog.name}</h3>
             </div>
             <div>
                 {showDetails ? <PigDetails hog={hog} /> : null}
-                <button onClick={detailsClick}>{showDetails ? "Less Info" : "Info"}</button>
+                <button onClick={detailsClick}>{showDetails ? "Less Details" : "More Details"}</button>
             </div>
         </div>
     );
