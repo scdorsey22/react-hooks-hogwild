@@ -17,9 +17,9 @@ function PigTile ( {hog} ) {
             <div className="header">
                 <h3>{hog.name}</h3>
             </div>
-            <div>
+            <div className="extra content">
                 {showDetails ? <PigDetails hog={hog} /> : null}
-                <button onClick={detailsClick}>Show Details</button>
+                <button className="ui button" onClick={detailsClick}>Show Details</button>
             </div>
         </div>
     );
