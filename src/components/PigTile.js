@@ -19,7 +19,7 @@ function PigTile ( {hog} ) {
             </div>
             <div>
                 {showDetails ? <PigDetails hog={hog} /> : null}
-                <button onClick={detailsClick}>{showDetails ? "Less Details" : "More Details"}</button>
+                <button onClick={detailsClick}>Show Details</button>
             </div>
         </div>
     );
